@@ -7,7 +7,7 @@ The purpose of this project is to build an ETL pipeline by using the Spotify API
 ![Architecture Diagram](https://github.com/mtmehmood/spotify-end-to-end-data-engineering-project/blob/main/Spotify%20ETL%20Diagram.jpg)
 
 ### About Dataset/API
-This API contains information about the music, artist, albums and songs
+This API contains information about the music, artist, albums and songs - [Spotify API](https://developer.spotify.com/documentation/web-api)
 
 ### Services Used
 
@@ -21,13 +21,12 @@ This API contains information about the music, artist, albums and songs
 
 
 ### Install Packages
----
 
+```
 pip install pandas
 pip install numpy
 pip install spotify
-
----
+```
 
 ### Project Execution Flow
-Extract Data from API → Lambda Trigger (every 1 hour) → Run Extract Code → Store Raw Data → Trigger Transform Function → Transform Data and Load It → Query Using Athena
+Extract Data from API → Lambda Trigger → Run Extract Code → Store Raw Data → Trigger Transform Function → Transform Data and Load It → Query Using Athena
